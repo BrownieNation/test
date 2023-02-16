@@ -1,0 +1,15 @@
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.social {
+    display: flex;
+}
+
+.links {
+    margin-right: 10px;
+}
