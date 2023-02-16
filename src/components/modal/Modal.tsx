@@ -1,7 +1,6 @@
 import './Modal.css'
 import { Modal} from 'react-bootstrap';
 import { Button } from '../button/Button';
-import { useRef } from 'react';
 
 
 interface PopupProps {
@@ -9,7 +8,7 @@ interface PopupProps {
     onHide: () => void;
     title: string;
     btnOnClick: () => void;
-    dogArray: {key:string, value:any}[];
+    InfoArray: {key:string, value:any}[];
     imagelink: string;
 } 
 
@@ -23,9 +22,9 @@ export const Popup: React.FC<PopupProps> = (props: PopupProps) => {
                 <Modal.Body style={{height: '100%'}}>
                     <img src={props.imagelink} height='200px' width='200px' style={{objectFit:'cover'}}></img>
                     <ul>
-                       {props.dogArray.map((dog, index) => { 
+                       {props.InfoArray.map((info, index) => { 
                         return(
-                            <li key={index}>{dog.key}: {dog.value}</li>
+                            <li key={index}>{info.key}: {info.value}</li>
                         )
                         }
                        )} 
