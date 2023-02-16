@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import './App.css'
 import { Header } from './components/header/Header'
 import About from './views/about/About'
-import Pokemon from './views/Pokemon/Pokemon'
+import Pokemon from './views/pokemon/Pokemon'
 import Home from './views/Home'
 
 function App() {
